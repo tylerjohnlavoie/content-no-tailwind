@@ -1,0 +1,54 @@
+:root {
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8533rem + 0.1087vw, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
+  --space-l: clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2446rem + 0.6522vw, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.3261rem + 0.8696vw, 5rem);
+  --space-3xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+  --space-4xl: clamp(9rem, 8.6522rem + 1.7391vw, 10rem);
+  --space-5xl: clamp(13.5rem, 12.9783rem + 2.6087vw, 15rem);
+  --space-6xl: clamp(18rem, 17.3043rem + 3.4783vw, 20rem);
+  --space-7xl: clamp(24rem, 25.9565rem + 5.2174vw, 30rem);
+  --space-8xl: clamp(32rem, 34.6087rem + 6.9565vw, 40rem);
+  --space-9xl: clamp(44rem, 43.2609rem + 8.6957vw, 50rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.3125rem, 0.2038rem + 0.5435vw, 0.625rem);
+  --space-2xs-xs: clamp(0.5625rem, 0.4321rem + 0.6522vw, 0.9375rem);
+  --space-xs-s: clamp(0.875rem, 0.7446rem + 0.6522vw, 1.25rem);
+  --space-s-m: clamp(1.125rem, 0.8641rem + 1.3043vw, 1.875rem);
+  --space-m-l: clamp(1.6875rem, 1.4049rem + 1.413vw, 2.5rem);
+  --space-l-xl: clamp(2.25rem, 1.7283rem + 2.6087vw, 3.75rem);
+  --space-xl-2xl: clamp(3.375rem, 2.8098rem + 2.8261vw, 5rem);
+  --space-2xl-3xl: clamp(4.5rem, 3.4565rem + 5.2174vw, 7.5rem);
+  --space-3xl-4xl: clamp(6.75rem, 5.6196rem + 5.6522vw, 10rem);
+  --space-4xl-5xl: clamp(9rem, 6.913rem + 10.4348vw, 15rem);
+  --space-5xl-6xl: clamp(13.5rem, 11.2391rem + 11.3043vw, 20rem);
+  --space-6xl-7xl: clamp(18rem, 13.8261rem + 20.8696vw, 30rem);
+  --space-7xl-8xl: clamp(27rem, 22.4783rem + 22.6087vw, 40rem);
+  --space-8xl-9xl: clamp(36rem, 31.1304rem + 24.3478vw, 50rem);
+
+  /* Custom pairs */
+  --space-m-xl: clamp(1.6875rem, 0.9701rem + 3.587vw, 3.75rem);
+  --space-xs-2xl: clamp(0.875rem, -0.5598rem + 7.1739vi, 5rem);
+}
+
+.container {
+    margin: auto;
+    padding: 0 var(--space-xs-2xl);
+}
+
+.griddy {
+    display: grid;
+    grid-template-columns:
+    repeat(12, 1fr);
+    gap: var(--space-xs-s);
+}
+
+.content {
+    grid-column-start: 3;
+    grid-column-end: 10;
+}

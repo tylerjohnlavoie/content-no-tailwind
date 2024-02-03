@@ -1,0 +1,56 @@
+@import "base.css";
+
+@font-face {
+  font-family: "Roboto Serif";
+  src: url("../fonts/RobotoSerif-Variable.ttf") format("TrueType");
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Roboto Serif";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: "Italic";
+  src: url("../fonts/RobotoSerif-Italic-Variable.ttf") format("truetype");
+}
+
+* {
+  font-family: "Roboto Serif", serif;
+}
+
+h1 {
+  font-variation-settings: "wght" 650, "GRAD" -15, "opsz" 80, "wdth" 82;
+  font-size: var(--space-xl);
+  letter-spacing: -0.0075em;
+  line-height: 100%;
+}
+
+h2 {
+  font-variation-settings: "wght" 600, "GRAD" -10, "opsz" 60, "wdth" 88;
+  font-size: var(--space-l);
+  letter-spacing: -0.005em;
+  line-height: 115%;
+}
+
+h3 {
+  font-variation-settings: "wght" 500, "GRAD" -5, "opsz" 40, "wdth" 91;
+  font-size: var(--space-m-l);
+  letter-spacing: -0.0025em;
+  line-height: 125%;
+}
+
+h4 {
+  font-variation-settings: "wght" 450, "GRAD" 0, "opsz" 30, "wdth" 95;
+  font-size: var(--space-s-m);
+  letter-spacing: 0;
+  line-height: 125%;
+}
+
+p {
+  font-size: var(--space-xs-s);
+  font-variation-settings: "wght" 350, "GRAD" 0, "opsz" 12, "wdth" 100;
+  line-height: 170%;
+  max-inline-size: 60ch;
+}
